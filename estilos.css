@@ -18,3 +18,12 @@ th,td{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+h1{
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+}
+td{
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
