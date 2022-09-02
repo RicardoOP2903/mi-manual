@@ -19,11 +19,12 @@ th,td{
     padding-bottom: 10px;
 }
 h1{
-    color: rgb(16, 16, 163);
+    color: rgb(23, 23, 143);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:30px;
 }
 td{
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(208, 232, 253, 0.822);
 }
