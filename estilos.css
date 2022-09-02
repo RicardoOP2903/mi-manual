@@ -2,3 +2,19 @@ body{
     background: url(fondo1.jpg);
     background-size: 100%;
 }
+table{
+    border-collapse: collapse;
+}
+th{
+    font-style: italic;
+    font-size: larger;
+    background-color: black;
+    color: white;
+}
+th,td{
+    border: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
