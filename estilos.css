@@ -24,7 +24,13 @@ h1{
     font-size:30px;
 }
 td{
-    font-size: large;
+    font-size: 17px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(208, 232, 253, 0.822);
+}
+td:hover{
+    background-color: white;
+}
+tr:nth-child(even){
+    background-color: rgba(106, 164, 214, 0.822);
 }
