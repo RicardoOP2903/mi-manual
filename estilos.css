@@ -1,36 +1,218 @@
 body{
-    background: url(fondo1.jpg);
+    background: #0e131b;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     background-size: 100%;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.5cm;
+    
 }
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		top: 0;left: 0;
+        background-color: #1f2c38;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:60px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	/* .logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	} */
+	.container .menu{
+		float: right;
+		line-height: 60px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #0e131b;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #0e131b;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+
+
+
+.logo{
+    margin-left: 30px;
+    padding-top: 6px;
+}
+
+.espacio-menu{
+    height: 100px;
+}
+
+#mi-nombre{
+    color:white;
+    font-family: 'Shadows Into Light',cursive;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#titulo-principal{
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 30px;
+}
+
 table{
     border-collapse: collapse;
+    width: 100ch;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
+
+.contenedor{
+    width: 100ch;
+}
+
+td, th{
+    padding: 10px 10px;
+    border: 2px solid #253442;
+    text-align: center;
+}
+
 th{
-    font-style: italic;
-    font-size: larger;
-    background-color: black;
-    color: white;
+    background-color: #3d7758;
 }
-th,td{
-    border: 2px solid gray;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+caption,#reemplazo-caption{
+    font-size: 0.8cm;
+    font-family: 'Oregano';
+    text-align: center;
 }
-h1{
-    color: rgb(23, 23, 143);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:30px;
+tbody tr:hover{
+    background: #96d8c6;
+    color: black;
 }
-td{
-    font-size: 17px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(208, 232, 253, 0.822);
+section{
+    margin: 0px auto;
 }
-td:hover{
-    background-color: white;
+footer{
+    text-align: center;
+    line-height: 1.5;
 }
-tr:nth-child(even){
-    background-color: rgba(106, 164, 214, 0.822);
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+#subtitulo{
+    font-family: 'Oregano', cursive;
+    font-size: 36px;
+}
+
+#contact,a{
+    color: rgb(199, 190, 190);
+}
+
+a:hover{
+    color: black;
 }

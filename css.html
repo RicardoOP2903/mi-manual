@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" href="imágenes/logo.jpg">
+    <title>Mi manual - CSS</title>
+</head>
+<body>
+
+
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+        <div class="logo">
+            <img src="imágenes/css-image.png" alt="" height="40">
+        </div>
+			<nav class="menu">
+				<a href="index.html">Menú</a>
+                <a href="recursos.html">Recursos</a>
+				<a href="html.html">HTML</a>
+				<a href="css.html">CSS</a>
+				<a href="">Prototipo</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#colores">Colores</a>
+                <a href="#selectores">Selectores</a>
+                <a href="#selectores-funciones">Selectores - funciones</a>
+                <a href="#longitudes-absolutas">Longitudes - unidades absolutas</a>
+                <a href="#longitudes-relativas">Longitudes - unidades relativas</a>
+                <a href="#cajas">Cajas</a>
+                <a href="#consulta-de-medios">Consultas de medios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+</div>
+
+
+    <div class="espacio-menu"></div>
+    <h2 id="mi-nombre">Manual de Ricardo Ortuño Prudencio</h2>
+    <h1 id="titulo-principal">CSS</h1>
+
+    <section id="colores">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>COLORES</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Formatos</th>
+                    <th>Descripción</th>
+                    <th>Herramienta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Nombres</td>
+                    <td>Podemos especificar un color usando un nombre predefinido. (En inglés) </td>
+                    <td><a href="https://www.w3.org/TR/css-color-3/#svg-color" target="_blank">css - color</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="3" id="tambien">Modelo RGB</td>
+                    <td>RGB</td>
+                    <td>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios. </td>
+                    <td><a href="https://www.calculadoraconversor.com/colores-rgb/" target="_blank">(Red, green, blue)</a></td>
+                </tr>
+                <tr>
+                    <td>RGBA</td>
+                    <td>Similar al RGB, pero con un parámetro adicional denominado opacidad (transparencia).</td>
+                    <td><a href="https://rgbacolorpicker.com/" target="_blank">(Red, green, blue, opacity)</a></td>
+                </tr>
+                <tr>
+                    <td>Valor hexadecimal</td>
+                    <td>Podemos utilizar un número hexadecimal para definir un color.</td>
+                    <td><a href="https://imagecolorpicker.com/" target="_blank">#hexadecimal</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" >Modelo HSL</td>
+                    <td>HSL</td>
+                    <td>En este modelo utilizamos conceptos que son más fáciles de comprender (hue, saturation, lightness).</td>
+                    <td><a href="https://hslpicker.com/" target="_blank">(tono,saturación,luminosidad)</a></td>
+                </tr>
+                <tr>
+                    <td>HSLA</td>
+                    <td>Esta función es idéntica a la función hsl, pero con un parámetro adicional denominado opacidad.</td>
+                    <td><a href="https://hslpicker.com/" target="_blank">(h,s,l,opacity)</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="selectores">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>SELECTORES</caption>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Definición</th>
+                    <th>Sintaxis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Universal</td>
+                    <td>Selecciona todos los elementos.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors" target="_blank">* { }</a></td>
+                </tr>
+                <tr>
+                    <td>De tipo</td>
+                    <td>Permite seleccionar elementos usando el nombre del elemento</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors" target="_blank">a { ]</a></td>
+                </tr>
+                <tr>
+                    <td>De clase</td>
+                    <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors" target="_blank">.valor_atributo { }</a></td>
+                </tr>
+                <tr>
+                    <td>De ID</td>
+                    <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors" target="_blank">#valor_atributo { }</a></td>
+                </tr>
+                <tr>
+                    <td>De atributo</td>
+                    <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo. </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">a[title] { }</a></td>
+                </tr>
+                <tr>
+                    <td>Pseudo-clases</td>
+                    <td>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el documento(:nth-child) e interacción del usuario(:hover).</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudo-clases</a></td>
+                </tr>
+                <tr>
+                    <td>Pseudo-elementos</td>
+                    <td>Seleccionan parte de un elemento en lugar del elemento mismo.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="_blank">Pseudo-elementos</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="selectores-funciones">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>FUNCIONES EN SELECTORES</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <td>Documentación</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Especificidad</td>
+                    <td rowspan="2">La especificidad es la manera mediante la cual los navegadores deciden el valor que será aplicado a una propiedad de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">(#id,.clase,p)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://polypane.app/css-specificity-calculator/" target="_blank">calculadora</a></td>
+                </tr>
+                <tr>
+                    <td>!important</td>
+                    <td>Anula todas las reglas de estilo anteriores para esa propiedad específica en ese elemento.</td>
+                    <td><a href="https://www.w3schools.com/css/css_important.asp" target="_blank">!important</a></td>
+                </tr>
+                <tr>
+                    <td>Orden</td>
+                    <td colspan="2">Cuando se tiene la misma especificidad, el orden es importante. La declaración CSS que se define al ultimo, es la que se aplica</td>
+                </tr>
+                <tr>
+                    <td>Herencia</td>
+                    <td colspan="2">Algunas propiedades no se heredan a los elementos hijos, por ejemplo la propiedad border.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">controlar herencia</td>
+                    <td>inherit (Obligar a heredar). La propiedad tendrá el mismo valor que la propiedad correspondiente del padre.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inherit" target="_blank">inherit</a></td>
+                </tr>
+                <tr>
+                    <td>initial (romper la herencia). La propiedad tendrá el valor por defecto, el valor establecido por defecto del navegador.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial" target="_blank">initial</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="longitudes-absolutas">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>UNIDADES ABSOLUTAS</caption>
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Nombre</th>
+                    <th>Equivalente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>px</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel" target="_blank">Pixel</a></td>
+                    <td>0.265cm</td>    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="longitudes-relativas">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>UNIDADES RELATIVAS</caption>
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Relativo a</th>
+                    <th>Documentación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rem</td>
+                    <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+                    <td rowspan="4"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Unidades relativas</a></td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre. Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre. </td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relativo al ancho del viewport</td>
+                </tr>
+                <tr>
+                    <td>vh</td>
+                    <td>Relativo al alto del viewport</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cajas">
+        <div class="espacio-menu"></div>
+        <table>
+            <caption>MODELO DE CAJAS</caption>
+            <thead>
+                <tr>
+                    <th>Partes</th>
+                    <th>Definición</th>
+                    <th colspan="2">Propiedades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Contenido</td>
+                    <td rowspan="4">Área donde se encuentra el contenido del elemento(texto, imagen, etc)</td>
+                    <td>min-width</td>
+                    <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Relleno</td>
+                    <td rowspan="4">Es el área de relleno del elemento.</td>
+                    <td>padding-top</td>
+                    <td rowspan="4"><a href="https://www.w3schools.com/css/css_padding.asp">padding</a></td>
+                </tr>
+                <tr>
+                    <td>padding-right</td>
+                </tr>
+                <tr>
+                    <td>padding-bottom</td>
+                </tr>
+                <tr>
+                    <td>padding-left</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">Borde</td>
+                    <td rowspan="3">Es el borde del elemento.</td>
+                    <td>border-width</td>
+                    <td rowspan="3"><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">border</a></td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Margen</td>
+                    <td rowspan="4">Es el margen del elemento.</td>
+                    <td>margin-top</td>
+                    <td rowspan="4"><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">margin</a></td>
+                </tr>
+                <tr>
+                    <td>margin-right</td>
+                </tr>
+                <tr>
+                    <td>margin-bottom</td>
+                </tr>
+                <tr>
+                    <td>margin-left</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="imagen">
+            <img src="imágenes/box-model.png" alt="Modelo de cajas">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Características</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">CAJAS EN BLOQUE</td>
+                    <td>Ocupan todo el espacio disponible en su contenedor aunque sus contenidos no lleguen al final de la línea.</td>
+                </tr>
+                <tr>
+                    <td>Siempre comienzan en una nueva línea.</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades width y height se respetan.</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades padding, margin y border harán que el contenido que rodea a la caja,  se aleje de esta. </td>
+                </tr>
+
+
+
+                <tr>
+                    <td rowspan="4">CAJAS EN LÍNEA</td>
+                    <td>Estas cajas solo ocupan el espacio necesario para mostrar su contenido. No empiezan en una nueva línea.</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades width y height no se respetan</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades padding, margin y border verticales se aplican, pero no harán que el contenido que rodea a la caja en la parte superior e inferior,  se aleje de esta.</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades padding, margin y border horizontales se aplican, y harán que el contenido que rodea a la caja en la parte izquierda y derecha,  se aleje de esta.</td>
+                </tr>
+
+
+                <tr>
+                    <td rowspan="3">ENFOQUE MIXTO</td>
+                    <td>No comienzan en una nueva línea.</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades width y height se respetan</td>
+                </tr>
+                <tr>
+                    <td>Las propiedades padding, margin y border harán que el contenido que rodea a la caja,  se aleje de esta.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="consulta-de-medios">
+        <div class="contenedor">
+            <div class="espacio-menu"></div>
+        <div id="reemplazo-caption">CONSULTA DE MEDIOS</div>
+        <div id="definicion">Una media query consiste básicamente en una media type  (es decir un tipo de dispositivo), y una o mas expresiones que contienen características del media type,  por ejemplo ancho de la ventana del navegador,  que pueden ser evaluados a true o false.</div>
+        <div id="definicion">Ejemplo:</div>
+        <code><pre>
+            @media screen and (max-width: 480px) {
+                body{
+                    background-color: green;
+                }
+            }
+            </pre></code>
+            <div id="definicion">El ejemplo básicamente dice que si el media type es una pantalla y el tamaño máximo de la ventana del navegador es igual o menor a 480px, hacer del color de fondo de elemento body  verde. </div>
+            
+        <h3 id="subtitulo">Sintaxis</h3>
+            <div class="imagen">
+                <img src="imágenes/media-query-image.JPG" alt="Sintaxis de una consulta de medios" height="400px">
+            </div>
+            
+        <table>
+            <caption>MEDIA FEATURE</caption>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>width</td>
+                    <td>Usada para verificar el ancho exacto de la ventana del navegador.</td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                    <td>Usada para verificar el ancho mas pequeño de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                    <td>Usada para verificar el ancho mas grande de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Usada para verificar el alto exacto de la ventana del navegador.</td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                    <td>Usada para verificar el alto mas pequeño de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td>Usada para verificar el alto mas grande de la ventana del navegador (viewport).</td>
+                </tr>
+                <tr>
+                    <td>aspect-ratio</td>
+                    <td>Usada para verificar la relación ancho/alto del viewport</td>
+                </tr>
+                <tr>
+                    <td>orientation</td>
+                    <td>Usada para verificar la orientación de la pantalla( portrait / landscape)</td>
+                </tr>
+                <tr>
+                    <td>resolution</td>
+                    <td>Usada para verificar la densidad de pixeles del dispositivo.</td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>Usada para verificar si el dispositivo usa una pantalla basada en grid o bitmap.</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Usada para verificar el numero de bits por componente de color (red, green, blue) del dispositivo.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+    <footer id="contacto">
+        <div class="espacio-menu"></div>
+        <div>Contacto:</div>
+            <a href="mailto:jhonny.ortuno@ucb.edu.bo" id="contact">jhonny.ortuno@ucb.edu.bo</a>
+            <br>
+             <a href="tel:+591 79705787" id="contact">79705787</a>
+        </footer>
+</body>
+</html>
