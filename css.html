@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="imágenes/logo.jpg">
     <title>Mi manual - CSS</title>
 </head>
@@ -33,6 +34,7 @@
                 <a href="recursos.html">Recursos</a>
 				<a href="html.html">HTML</a>
 				<a href="css.html">CSS</a>
+                <a href="flexbox.html">FlexBox</a>
 			</nav>
 		</div>
 	</header>
@@ -41,13 +43,13 @@
         <div class="container-menu">
         <div class="cont-menu">
             <nav>
-                <a href="#colores">Colores</a>
-                <a href="#selectores">Selectores</a>
-                <a href="#selectores-funciones">Selectores - funciones</a>
-                <a href="#longitudes-absolutas">Longitudes - unidades absolutas</a>
-                <a href="#longitudes-relativas">Longitudes - unidades relativas</a>
-                <a href="#cajas">Cajas</a>
-                <a href="#consulta-de-medios">Consultas de medios</a>
+                <a href="#l-colores">Colores</a>
+                <a href="#l-selectores">Selectores</a>
+                <a href="#l-selectores-funciones">Selectores - funciones</a>
+                <a href="#l-longitudes-absolutas">Longitudes - unidades absolutas</a>
+                <a href="#l-longitudes-relativas">Longitudes - unidades relativas</a>
+                <a href="#l-cajas">Cajas</a>
+                <a href="#l-consulta-de-medios">Consultas de medios</a>
                 <a href="#contacto">Contacto</a>
             </nav>
             <label for="btn-menu">✖️</label>
@@ -59,8 +61,9 @@
     <h2 id="mi-nombre">Manual de Ricardo Ortuño Prudencio</h2>
     <h1 id="titulo-principal">CSS</h1>
 
+    <div id="l-colores"></div>
+    <div class="espacio-menu"></div>
     <section id="colores">
-        <div class="espacio-menu"></div>
         <table>
             <caption>COLORES</caption>
             <thead>
@@ -107,8 +110,9 @@
         </table>
     </section>
 
+    <div id="l-selectores"></div>
+    <div class="espacio-menu"></div>
     <section id="selectores">
-        <div class="espacio-menu"></div>
         <table>
             <caption>SELECTORES</caption>
             <thead>
@@ -158,15 +162,17 @@
         </table>
     </section>
 
+
+    <div id="l-selectores-funciones"></div>
+    <div class="espacio-menu"></div>
     <section id="selectores-funciones">
-        <div class="espacio-menu"></div>
         <table>
             <caption>FUNCIONES EN SELECTORES</caption>
             <thead>
                 <tr>
                     <th>Nombre</th>
                     <th>Descripción</th>
-                    <td>Documentación</td>
+                    <th>Documentación</th>
                 </tr>
             </thead>
             <tbody>
@@ -204,8 +210,11 @@
         </table>
     </section>
 
+
+
+    <div id="l-longitudes-absolutas"></div>
+    <div class="espacio-menu"></div>
     <section id="longitudes-absolutas">
-        <div class="espacio-menu"></div>
         <table>
             <caption>UNIDADES ABSOLUTAS</caption>
             <thead>
@@ -225,8 +234,11 @@
         </table>
     </section>
 
+
+
+    <div id="l-longitudes-relativas"></div>
+    <div class="espacio-menu"></div>
     <section id="longitudes-relativas">
-        <div class="espacio-menu"></div>
         <table>
             <caption>UNIDADES RELATIVAS</caption>
             <thead>
@@ -258,8 +270,11 @@
         </table>
     </section>
 
+
+
+    <div id="l-cajas"></div>
+    <div class="espacio-menu"></div>
     <section id="cajas">
-        <div class="espacio-menu"></div>
         <table>
             <caption>MODELO DE CAJAS</caption>
             <thead>
@@ -333,7 +348,14 @@
                 </tr>
             </tbody>
         </table>
-        <div class="imagen">
+    </section>
+
+    <section>
+        
+    </section>
+
+    <section>
+        <div class="imagen-peq">
             <img src="imágenes/box-model.png" alt="Modelo de cajas">
         </div>
         <table>
@@ -389,26 +411,42 @@
         </table>
     </section>
 
-    <section id="consulta-de-medios">
-        <div class="contenedor">
+
+    <div id="l-consulta-de-medios"></div>
+    <div class="espacio-menu"></div>
+    <section>
+        <div id="definicion">
+            <div id="reemplazo-caption">CONSULTA DE MEDIOS</div>
+        </div>
             <div class="espacio-menu"></div>
-        <div id="reemplazo-caption">CONSULTA DE MEDIOS</div>
-        <div id="definicion">Una media query consiste básicamente en una media type  (es decir un tipo de dispositivo), y una o mas expresiones que contienen características del media type,  por ejemplo ancho de la ventana del navegador,  que pueden ser evaluados a true o false.</div>
-        <div id="definicion">Ejemplo:</div>
-        <code><pre>
-            @media screen and (max-width: 480px) {
-                body{
-                    background-color: green;
-                }
-            }
-            </pre></code>
-            <div id="definicion">El ejemplo básicamente dice que si el media type es una pantalla y el tamaño máximo de la ventana del navegador es igual o menor a 480px, hacer del color de fondo de elemento body  verde. </div>
-            
-        <h3 id="subtitulo">Sintaxis</h3>
-            <div class="imagen">
-                <img src="imágenes/media-query-image.JPG" alt="Sintaxis de una consulta de medios" height="400px">
+            <div id="definicion">Una media query consiste básicamente en una media type  (es decir un tipo de dispositivo), y una o mas expresiones que contienen características del media type,  por ejemplo ancho de la ventana del navegador,  que pueden ser evaluados a true o false.</div>
+            <div id="definicion">Ejemplo:</div>
+            <div id="definicion">
+                <code><pre>
+                    @media screen and (max-width: 480px) {
+
+                     body{
+                      background-color: green;
+                     }
+                    }
+                    </pre></code>
             </div>
-            
+                <div id="definicion">El ejemplo básicamente dice que si el media type es una pantalla y el tamaño máximo de la ventana del navegador es igual o menor a 480px, hacer del color de fondo de elemento body  verde. </div>
+    </section>
+
+    <section>
+            <h3 id="subtitulo">Sintaxis</h3>
+            <div class="espacio-menu"></div>
+    </section>
+    <section>
+        <div class="imagen-gra">
+            <img src="imágenes/media-query-image.JPG" alt="Sintaxis de una consulta de medios">
+        </div>
+    </section>
+
+
+    <div class="espacio-menu"></div>
+    <section id="consulta-de-medios">
         <table>
             <caption>MEDIA FEATURE</caption>
             <thead>
@@ -467,15 +505,16 @@
         </div>
     </section>
 
+
+
     
+    <div class="espacio-menu"></div>
     <footer id="contacto">
-        <div class="espacio-menu"></div>
-        <div>Contacto:</div>
-            <a href="mailto:jhonny.ortuno@ucb.edu.bo" id="contact">jhonny.ortuno@ucb.edu.bo</a>
-            <br>
-             <a href="tel:+591 79705787" id="contact">79705787</a>
-             <br>
-             <a href="https://github.com/RicardoOP2903/" target="_blank" id="contact">github</a>
-        </footer>
+        <section class="buttons">
+           <a href="https://github.com/RicardoOP2903/" class="fa fa-github" target="_blank"></a>
+           <a href="mailto:jhonny.ortuno@ucb.edu.bo" class="fa fa-google"></a>
+           <a href="https://api.whatsapp.com/send?phone=59179705787" class="fa fa-whatsapp" target="_blank"></a>
+         </section>
+   </footer>
 </body>
 </html>

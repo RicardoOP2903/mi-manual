@@ -84,6 +84,6 @@ body{
 .tabla:hover{
     background: #93ffa1;
     color: #0e131b;
-    transition: 0.22s all;
+    transition: 0.32s all;
     transform: scale(1.04);
 }

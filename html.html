@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="imágenes/logo.jpg">
 
 </head>
@@ -36,6 +37,7 @@
                 <a href="recursos.html">Recursos</a>
 				<a href="html.html">HTML</a>
 				<a href="css.html">CSS</a>
+                <a href="flexbox.html">FlexBox</a>
 			</nav>
 		</div>
 	</header>
@@ -44,10 +46,10 @@
         <div class="container-menu">
         <div class="cont-menu">
             <nav>
-                <a href="#estructura-basica">Estructura básica</a>
-                <a href="#elementos-genericos">Elementos genéricos</a>
-                <a href="#elementos-semanticos">Elementos semánticos</a>
-                <a href="#manejo-de-texto">Manejo de texto</a>
+                <a href="#l-estructura-basica">Estructura básica</a>
+                <a href="#l-elementos-genericos">Elementos genéricos</a>
+                <a href="#l-elementos-semanticos">Elementos semánticos</a>
+                <a href="#l-manejo-de-texto">Manejo de texto</a>
                 <a href="#contacto">Contacto</a>
             </nav>
             <label for="btn-menu">✖️</label>
@@ -60,8 +62,10 @@
     <h2 id="mi-nombre">Manual de Ricardo Ortuño Prudencio</h2>
 <h1 id="titulo-principal">Elementos HTML</h1>
 
+
+<div id="l-estructura-basica"></div>
+<div class="espacio-menu"></div>
 <section id="estructura-basica">
-    <div class="espacio-menu"></div>
     <table>
         <caption>ESTRUCTURA BÁSICA</caption>
         <thead>
@@ -92,8 +96,9 @@
 </section>
 
 
+<div id="l-elementos-genericos"></div>
+<div class="espacio-menu"></div>
 <section id="elementos-genericos">
-    <div class="espacio-menu"></div>
     <table>
         <caption>ELEMENTOS GENÉRICOS</caption>
         <thead>
@@ -119,8 +124,9 @@
 </section>
 
 
+<div id="l-elementos-semanticos"></div>
+<div class="espacio-menu"></div>
 <section id="elementos-semanticos">
-    <div class="espacio-menu"></div>
     <table>
         <caption>ELEMENTOS SEMÁNTICOS</caption>
         <thead>
@@ -171,8 +177,9 @@
 </section>
 
 
+<div id="l-manejo-de-texto"></div>
+<div class="espacio-menu"></div>
 <section id="manejo-de-texto">
-    <div class="espacio-menu"></div>
     <table>
         <caption>MANEJO DE TEXTO</caption>
         <thead>
@@ -308,13 +315,11 @@
 </section>
 
 <footer id="contacto">
-    <div class="espacio-menu"></div>
-    <div>Contacto:</div>
-        <a href="mailto:jhonny.ortuno@ucb.edu.bo" id="contact">jhonny.ortuno@ucb.edu.bo</a>
-        <br>
-         <a href="tel:+591 79705787" id="contact">79705787</a>
-         <br>
-         <a href="https://github.com/RicardoOP2903/" target="_blank" id="contact">github</a>
-    </footer>
+    <section class="buttons">
+       <a href="https://github.com/RicardoOP2903/" class="fa fa-github" target="_blank"></a>
+       <a href="mailto:jhonny.ortuno@ucb.edu.bo" class="fa fa-google"></a>
+       <a href="https://api.whatsapp.com/send?phone=59179705787" class="fa fa-whatsapp" target="_blank"></a>
+     </section>
+</footer>
     
     </body>

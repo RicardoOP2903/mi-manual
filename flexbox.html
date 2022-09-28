@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-flex.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="imágenes/logo.jpg">
+    <title>Mi manual - FlexBox</title>
+</head>
+<body>
+    
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<nav class="menu">
+				<a href="index.html">Menú</a>
+                <a href="recursos.html">Recursos</a>
+				<a href="html.html">HTML</a>
+				<a href="css.html">CSS</a>
+                <a href="flexbox.html">FlexBox</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#terminos-importantes">Términos importantes</a>
+                <a href="#direccion-eje-principal">Eje principal</a>
+                <a href="#nowrap">Eje transversal - nowrap</a>
+                <a href="#wrap">Eje transversal - wrap</a>
+                <a href="#wrap-reverse">Eje transversal - wrap-reverse</a>
+                <a href="#alinear-lineas">Alinear líneas</a>
+                <a href="#colocar-elementos-principal">Colocar elementos - principal</a>
+                <a href="#colocar-elementos-transversal">Colocar elementos - transversal</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+</div>
+
+<div class="espacio-menu"></div>
+<section>
+    <h2 id="mi-nombre">Manual de Ricardo Ortuño Prudencio</h2>
+</section>
+<section>
+    <h1 id="titulo-principal">FlexBox</h1>
+</section>
+
+
+    <div id="terminos-importantes"></div>
+    <div class="espacio-menu"></div>
+    <section>
+        <div id="reemplazo-caption">Términos importantes</div>
+        <div class="imagen-gra">
+            <img src="imágenes/terminos-importantes-flex.jpg" alt="Términos importantes flexbox">
+        </div>
+    </section>
+
+    <div id="direccion-eje-principal"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">Establecer dirección del eje principal</h3>
+
+    <div id="reemplazo-caption">De izquierda a derecha</div>
+    <section id="flex">
+        <div class="contenedor-flexible-A">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">De derecha a izquierda</div>
+    <section id="flex">
+        <div class="contenedor-flexible-B">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">De arriba a abajo</div>
+    <section id="flex">
+        <div class="contenedor-flexible-C">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">De abajo a arriba</div>
+    <section id="flex">
+        <div class="contenedor-flexible-D">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+
+
+<div id="nowrap"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">nowrap</h3>
+    <div class="espacio-menu"></div>
+    <div id="reemplazo-caption">Izquierda a derecha</div>
+    <section id="flex">
+        <div class="contenedor-flexible-E">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+    <div id="reemplazo-caption">Derecha a izquierda</div>
+    <section id="flex">
+        <div class="contenedor-flexible-F">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+  <div id="reemplazo-caption">De arriba a abajo</div>
+    <section id="flex">
+        <div class="contenedor-flexible-G">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">De abajo a arriba</div>
+    <section id="flex">
+        <div class="contenedor-flexible-H">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+<div id="wrap"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">wrap</h3>
+    <div class="espacio-menu"></div>
+    <div id="reemplazo-caption">Izquierda a derecha</div>
+    <section id="flex">
+        <div class="contenedor-flexible-I">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+    <div id="reemplazo-caption">Derecha a izquierda</div>
+    <section id="flex">
+        <div class="contenedor-flexible-J">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+  <div id="reemplazo-caption">De arriba a abajo</div>
+    <section id="flex">
+        <div class="contenedor-flexible-K">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">De abajo a arriba</div>
+    <section id="flex">
+        <div class="contenedor-flexible-L">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+        </div>
+    </section>
+
+
+
+
+
+
+<div id="wrap-reverse"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">wrap-reverse</h3>
+    <div class="espacio-menu"></div>
+    <div id="reemplazo-caption">Izquierda a derecha</div>
+    <section id="flex">
+        <div class="contenedor-flexible-M">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+    <div id="reemplazo-caption">Derecha a izquierda</div>
+    <section id="flex">
+        <div class="contenedor-flexible-N">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+  <div id="reemplazo-caption">De arriba a abajo</div>
+    <section id="flex">
+        <div class="contenedor-flexible-O">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">De abajo a arriba</div>
+    <section id="flex">
+        <div class="contenedor-flexible-P">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+
+
+
+    <div class="espacio-menu"></div>
+    <div id="alinear-lineas"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">Alinear líneas</h3>
+    <div id="reemplazo-caption">flex-start</div>
+    <section id="flex">
+        <div class="contenedor-flexible-1">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">flex-end</div>
+    <section id="flex">
+        <div class="contenedor-flexible-2">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+        </div>
+    </section>
+    
+
+    <div id="reemplazo-caption">space-between</div>
+    <section id="flex">
+        <div class="contenedor-flexible-3">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">center</div>
+    <section id="flex">
+        <div class="contenedor-flexible-4">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">space-around</div>
+    <section id="flex">
+        <div class="contenedor-flexible-5">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">stretch</div>
+    <section id="flex">
+        <div class="contenedor-flexible-6">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="espacio-menu"></div>
+    <div id="colocar-elementos-principal"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">Colocar los elementos</h3>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">Dirección del eje principal</h3>
+    <div id="reemplazo-caption">flex-start</div>
+    <section id="flex">
+        <div class="contenedor-flexible-7">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">flex-end</div>
+    <section id="flex">
+        <div class="contenedor-flexible-8">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+    
+
+    <div id="reemplazo-caption">center</div>
+    <section id="flex">
+        <div class="contenedor-flexible-9">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">space-between</div>
+    <section id="flex">
+        <div class="contenedor-flexible-10">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+    <div id="reemplazo-caption">space-around</div>
+    <section id="flex">
+        <div class="contenedor-flexible-11">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+    <div class="espacio-menu"></div>
+    <div id="colocar-elementos-transversal"></div>
+    <div class="espacio-menu"></div>
+    <h3 id="subtitulo">Dirección del eje transversal</h3>
+
+    <div id="reemplazo-caption">stretch</div>
+    <section id="flex">
+        <div class="contenedor-flexible-12">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">flex-start</div>
+    <section id="flex">
+        <div class="contenedor-flexible-13">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+    <div id="reemplazo-caption">flex-end</div>
+    <section id="flex">
+        <div class="contenedor-flexible-14">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 8</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+    
+
+    <div id="reemplazo-caption">center</div>
+    <section id="flex">
+        <div class="contenedor-flexible-15">
+            <div class="elemento-flexible"><div class="item">Item 1</div></div>
+            <div class="elemento-flexible"><div class="item">Item 2</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 3</div></div>
+            <div class="elemento-flexible"><div class="item">Item 4</div></div>
+            <div class="elemento-flexible"><div class="item">Item 5</div></div>
+            <div class="elemento-flexible"><div class="item">Item 6</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 7</div></div>
+            <div class="elemento-flexible"><div class="item">Item 9</div></div>
+            <div class="elemento-flexible"><div class="item">Item 10</div></div>
+            <div class="elemento-flexible-2"><div class="item">Item 11</div></div>
+            <div class="elemento-flexible"><div class="item">Item 12</div></div>
+        </div>
+    </section>
+
+
+
+    <footer id="contacto">
+        <section class="buttons">
+           <a href="https://github.com/RicardoOP2903/" class="fa fa-github" target="_blank"></a>
+           <a href="mailto:jhonny.ortuno@ucb.edu.bo" class="fa fa-google"></a>
+           <a href="https://api.whatsapp.com/send?phone=59179705787" class="fa fa-whatsapp" target="_blank"></a>
+         </section>
+   </footer>
+</body>
+</html>

@@ -1,6 +1,5 @@
 body{
 	background-color: #0e131b !important;
-    background-size: 100%;
     display:grid;
     align-items: center;
     justify-content: center;
@@ -21,14 +20,13 @@ body{
 		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
-	.capa{
+	/* .capa{
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: rgba(0,0,0,0.6);
 		z-index: -1;
 		top: 0;left: 0;
-	}
+	} */
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
@@ -51,12 +49,6 @@ body{
 		font-size: 25px;
 		cursor: pointer;
 	}
-	/* .logo h1{
-		color: #fff;
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	} */
 	.container .menu{
 		float: right;
 		line-height: 60px;
@@ -74,7 +66,8 @@ body{
 	}
 	.container .menu a:hover{
 		border-bottom: 2px solid #c7c7c7;
-		padding-bottom: 5px;
+		padding-bottom:10px;
+		font-size: 19px;
 	}
 	/*Fin de Estilos para el encabezado*/
 
@@ -117,11 +110,12 @@ body{
 		padding: 20px;
 		color: #c7c7c7;
 		border-left: 5px solid transparent;
-		transition: all 400ms ease;
+		transition: all 100ms ease;
 	}
 	.cont-menu nav a:hover{
 		border-left: 5px solid #c7c7c7;
 		background: #0e131b;
+		font-size: 20px;
 	}
 	.cont-menu label{
 		position: absolute;
@@ -138,10 +132,12 @@ body{
 .logo{
     margin-left: 30px;
     padding-top: 6px;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 .espacio-menu{
-    height: 100px;
+    height: 60px;
 }
 
 #mi-nombre{
@@ -149,25 +145,24 @@ body{
     font-family: 'Shadows Into Light',cursive;
     font-size: 40px;
     padding: 0px;
-    margin: 0px;
+    margin-left: 15px;
 }
 
 #titulo-principal{
     font-size: 35px;
     font-family: 'Press Start 2P', cursive;
-    margin-left: 30px;
+    margin-left: 45px;
 }
 
 table{
     border-collapse: collapse;
-    width: 100ch;
     margin-bottom: 25px;
     margin-top: 25px;
+	min-width: 320px;
+	max-width: 1100px;
+	width: inherit;
 }
 
-.contenedor{
-    width: 100ch;
-}
 
 td, th{
     padding: 10px 10px;
@@ -187,13 +182,25 @@ caption,#reemplazo-caption{
 tbody tr:hover{
     background: #96d8c6;
     color: black;
+	transition:0.4s all;
 }
+
 section{
-    margin: 0px auto;
+	width: 100vw;
+	max-width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-width: 200px;
+	margin: auto;
+	padding: 10px;
 }
 footer{
-    text-align: right;
-    line-height: 1.5;
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding: 10px;
+	flex-wrap: wrap;
 }
 
 img{
@@ -210,8 +217,70 @@ img{
     color: rgb(199, 190, 190);
 }
 
-a:hover{
-    color: black;
-	margin: 0;
-	padding:0;
+a{
+    color: inherit;
 }
+
+#definicion{
+	display: flex;
+	width: 75vw;
+	max-width: 1000px;
+	min-width: 200px;
+	margin: auto;
+}
+
+#reemplazo-caption, #subtitulo, #definicion{
+	margin-left: auto;
+	margin-right: auto;
+}
+.imagen-peq{
+	width: 30vw;
+	max-width: 1000px;
+	min-width: 200px;
+	margin: auto;
+}
+
+.imagen-gra{
+	width: 75vw;
+	max-width: 1000px;
+	min-width: 320px;
+	margin: auto;
+}
+
+img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+	body{
+		background-color: green;
+	}
+}
+	
+
+
+
+.buttons {
+	min-width: 200px;
+	display: flex;
+	justify-content:end;
+  }
+  
+  .buttons a {
+	text-decoration: none;
+	font-size: 28px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #314652;
+	color: #f1f1f1;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .buttons a:hover {
+	transform: scale(1.3);
+  }
